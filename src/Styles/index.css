@@ -4,28 +4,152 @@ body {
   font-family: sans-serif;
 }
 
-.head-text{
-  background: teal;
-text-align: center;
-padding:10px;
-border: 1px solid black;
-  font-size: 20px;
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 
 }
-.menu-item{
-  float:left;
+
+.container .main-title {
+  width: 100%;
+  flex: 1;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  box-shadow: 0 1px 3px black;
+  border-bottom: 4px solid red;
+
 }
-.menu-item img{
-  height:100px;
-  width:150px;
- 
+
+.items-menu {
+  display: flex;
+  flex-direction: column;
+  background: #8080807a;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
-.category-items{
-  font-size: 15px;
-  padding-left:45px;
+
+.items-menu h1 {
+  background: teal;
+  padding: 8px 20px;
+  text-transform: capitalize;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  margin: 0 0 10px 0;
+  box-shadow: 0 2px 10px black;
 }
-ul,li{
-  text-decoration: none;
-  list-style-type: none;
-  
+
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.items {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.show-pop {
+  padding: 8px 10px;
+  margin-top: 5px;
+  width: 100%;
+  background: orangered;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  box-shadow: 0 3px 10px black;
+  transition: all .3s ease-in-out;
+}
+
+.items:hover .show-pop {
+  box-shadow: 0 0 3px black;
+  transform: scale(1.1)
+}
+
+.img-holder {
+  width: 120px;
+  height: 120px;
+}
+
+.img-holder img {
+  width: 100%;
+  height: 100%;
+  ;
+}
+
+.pop-up-box {
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  padding: 10px;
+  overflow: scroll;
+
+}
+
+.pop-up-box .close {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  width: 100%;
+}
+
+.pop-up-box .close {
+  background: white;
+}
+
+.pop-up-box .close div {
+  flex: 1;
+  line-height: 60px;
+  padding: 0 30px;
+}
+
+.pop-up-box .close button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+
+}
+
+.pop-up-box .item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  padding: 0 20px;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.pop-up-box .item img {
+  height: 80px;
+}
+
+.pop-up-box .item button {
+  padding: 5px;
+  font-size: 20px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 4px;
+  padding: 6px 10px;
+  background: orangered;
 }
